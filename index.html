@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="nav-wrapper">
+        <div id="nav">
+            <div id="logo-wrapper">
+                <img class="pointer" id="logo" src="https://www.lexus.com/assets/img/global/lexus_logo_english.png"
+                    alt="Lexus logo">
+            </div>
+            <div id="main-menu-wrapper">
+                <ul>
+                    <div id="sedans-dropdown" class="dropdown-main">
+                        <li class="pointer">Sedans</li>
+                        <div id="sedans-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/is.png" alt="IS">
+                                <h3>IS</h3>
+                                <p>Starting at $39,000*</p>
+                                <p>2.0L I-4 OR 3.5L V6</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/es.png" alt="ES">
+                                <h3>ES</h3>
+                                <p>Starting at $40,000*</p>
+                                <p>I-4 OR V6, AVAILABLE AWD</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/esh.png" alt="ESH">
+                                <h3>ES Hybrid</h3>
+                                <p>Starting at $41,910*</p>
+                                <p>44-MPG Combined Rating*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/ls.png" alt="LS">
+                                <h3>LS</h3>
+                                <p>Starting at $76,000*</p>
+                                <p>416-HP* 3.5L V6</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/lsh.png" alt="LSH">
+                                <h3>LS Hybrid</h3>
+                                <p>Arriving spring 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="suvs-dropdown" class="dropdown-main">
+                        <li class="pointer">Suvs</li>
+                        <div id="suvs-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/ux.png" alt="UX">
+                                <h3>UX</h3>
+                                <p>Starting at $32,900*</p>
+                                <p>32-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/uxh.png" alt="UXH">
+                                <h3>UX HYBRID</h3>
+                                <p>Starting at $35,100*</p>
+                                <p>39-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/nx.png" alt="NX">
+                                <h3>NX</h3>
+                                <p>Starting at $37,610*</p>
+                                <p>235-HP* 2.0L TURBO</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/nxh.png" alt="NXH">
+                                <h3>NX Hybrid</h3>
+                                <p>Starting at $40,160*</p>
+                                <p>31-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rx.png" alt="RX">
+                                <h3>RX</h3>
+                                <p>Starting at $45,170*</p>
+                                <p>3-ROW SEATING UP TO 7*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rxh.png" alt="RHX">
+                                <h3>RX HYBRID</h3>
+                                <p>Starting at $47,820*</p>
+                                <p>30-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/ux.png" alt="GX">
+                                <h3>GX</h3>
+                                <p>Starting at $53,250*</p>
+                                <p>301-HP* V8, FULL-TIME 4WD</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/ux.png" alt="LX">
+                                <h3>LX</h3>
+                                <p>Starting at $86,730*</p>
+                                <p>383-HP* V8, FULL-TIME 4WD</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="coupes-dropdown" class="dropdown-main">
+                        <li class="pointer">Coupes</li>
+                        <div id="coupes-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rc.png" alt="RC">
+                                <h3>RC</h3>
+                                <p>Starting at $42,220*</p>
+                                <p>2.0L I-4 OR 3.5L V6</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rcf.png" alt="RCF">
+                                <h3>RC F</h3>
+                                <p>Starting at $65,975*</p>
+                                <p>472-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lc.png" alt="LC">
+                                <h3>LC</h3>
+                                <p>Starting at $93,050*</p>
+                                <p>471-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lch.png" alt="LCH">
+                                <h3>LC Hybrid</h3>
+                                <p>Starting at $97,610*</p>
+                                <p>354 TOTAL SYSTEM HP*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lcc.png" alt="LCC">
+                                <h3>LC CONVERTIBLE</h3>
+                                <p>Starting at $101,100*</p>
+                                <p>471-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hybrids-dropdown" class="dropdown-main">
+                        <li class="pointer">Hybrids</li>
+                        <div id="hybrids-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/uxh.png" alt="UXH">
+                                <h3>UX HYBRID</h3>
+                                <p>Starting at $35,100*</p>
+                                <p>39-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/nxh.png" alt="NXH">
+                                <h3>NX HYBRID</h3>
+                                <p>Starting at $40,160*</p>
+                                <p>31-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rxh.png" alt="RHX">
+                                <h3>RX HYBRID</h3>
+                                <p>Starting at $47,820*</p>
+                                <p>30-MPG COMBINED ESTIMATE*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/esh.png" alt="ESH">
+                                <h3>ES Hybrid</h3>
+                                <p>Starting at $41,910*</p>
+                                <p>44-MPG Combined Rating*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="//www.lexus.com/cm-img/header_images/lsh.png" alt="LSH">
+                                <h3>LS Hybrid</h3>
+                                <p>Arriving spring 2021</p>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lch.png" alt="LCH">
+                                <h3>LC Hybrid</h3>
+                                <p>Starting at $97,610*</p>
+                                <p>354 TOTAL SYSTEM HP*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="performance-dropdown" class="dropdown-main">
+                        <li class="pointer">Performance</li>
+                        <div id="performance-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/rcf.png" alt="rcf">
+                                <h3>RC F</h3>
+                                <p>Starting at $65,975*</p>
+                                <p>472-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lc.png" alt="LC">
+                                <h3>LC</h3>
+                                <p>Starting at $93,050*</p>
+                                <p>471-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lch.png" alt="LCH">
+                                <h3>LC Hybrid</h3>
+                                <p>Starting at $97,610*</p>
+                                <p>354 TOTAL SYSTEM HP*</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lcc.png" alt="LCC">
+                                <h3>LC CONVERTIBLE</h3>
+                                <p>Starting at $101,100*</p>
+                                <p>471-HP* 5.0L V8</p>
+                                <div class="dropdown-hidden">
+                                    <p>BUILD</p>
+                                    <p>CURRENT OFFERS</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/2020/performance.png"
+                                    alt="PERFORMANCE">
+                                <h3>Performance</h3>
+                                <p>HIGH-PERFORMANCE VEHICLES<br>AND F SPORT ACCESSORIES</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="future-dropdown" class="dropdown-main">
+                        <li class="pointer">Future</li>
+                        <div id="future-dropdown-content" class="dropdown-content">
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lf30-convertible.png" alt="LCC">
+                                <h3>LF-30 ELECTRIFIED</h3>
+                                <p>Concept vehicle</p>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lf-1-limitless.png" alt="LCC">
+                                <h3>LF-1 LIMITLESS</h3>
+                                <p>Concept vehicle</p>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lf-fc.png" alt="LCC">
+                                <h3>LF-FC</h3>
+                                <p>Concept vehicle</p>
+                            </div>
+                            <div class="dropdown-item pointer">
+                                <img src="https://www.lexus.com/cm-img/header_images/lfsa.png" alt="LCC">
+                                <h3>LF-SA</h3>
+                                <p>Concept vehicle</p>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div id="right-menu-wrapper">
+                <div class="right-menu">
+                    <p class="pointer">Owners</p>
+                </div>
+                <div class="right-menu">
+                    <p class="pointer">L/Certified</p>
+                </div>
+                <div class="right-menu">
+                    <p class="pointer">Find A Dealer</p>
+                </div>
+                <button id="search-btn"><i class="bi bi-search"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main-wrapper">
+        <div id="hero-section">
+
+            <div id="hero-first-slide" class="slide">
+                <img style="width: 100%;"
+                    src="https://www.lexus.com/-/media/TMNA.LEXC/Project/Lexus/Homepage/Hero/2021/Lexus-IS-Homepage-Hero-Desktop-1920x795-LEX-ISG-MY21-0067_M75.jpg?rev=f6eacf15d7f94d4c8a96cb593ff660f3?la=en&hash=1D76E919EE3F8C4304B68915CF1DA3B0"
+                    alt="">
+                <div id="hero-label-top">
+                    <h1>THE 2021 IS</h1>
+                    <h3>ALL-IN ENGINEERING. ALL-OUT PERFORMANCE.</h3>
+                </div>
+                <div id="hero-label-bot">
+                    <h4>STARTING AT</h4>
+                    <p id="big-label">$39,000*</p>
+                    <p id="small-label">$46,145* VEHICLE SHOWN</p>
+                </div>
+                <div>
+                    <button id="hero-btn1">EXPLORE</button>
+                    <button id="hero-btn2">BUILD</button>
+                </div>
+            </div>
+            <div id="hero-second-slide" class="slide">
+                <img style="width: 100%;"
+                    src="https://www.lexus.com/-/media/TMNA.LEXC/Project/Lexus/Homepage/Hero/2021/Lexus-IS-Homepage-Hero-Desktop-1920x795-LEX-ISG-MY21-0067_M75.jpg?rev=f6eacf15d7f94d4c8a96cb593ff660f3?la=en&hash=1D76E919EE3F8C4304B68915CF1DA3B0"
+                    alt="">
+            </div>
+            <div id="hero-next"><i class="bi bi-caret-right-fill"></i></div>
+            <div id="hero-prev"><i class="bi bi-caret-left-fill"></i></div>
+        </div>
+    </div>
+
+    <div id="footer-wrapper"></div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
