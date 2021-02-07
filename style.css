@@ -13,6 +13,11 @@
     src: url("fonts/pakt.woff") format("woff");
 }
 
+@font-face { 
+    font-family: nobel-light; 
+    src: url("fonts/nobel-light.woff") format("woff");
+}
+
 ul {
     list-style: none;
 }
@@ -157,7 +162,8 @@ li {
     top: 45%;
 }
 
-#hero-label-top {
+.hero-label-top {
+    width: 100%;
     color: white;
     position: absolute;
     top: 2%;
@@ -166,19 +172,21 @@ li {
     text-align: center;
 }
 
-#hero-label-top h1 {
-    font-size: 5vw;
+.hero-label-top h1 {
+    font-size: 3.4vw;
     letter-spacing: .5vw;
     padding-bottom: 1vw;
 }
 
-#hero-label-top h1 span {
+.hero-label-top h1 span {
     padding-bottom: .6vw;
     border-bottom: .3vw solid #fff;
 }
 
-#hero-label-top h3 {
-    font-size: 2vw;
+.hero-label-top h3 {
+    font-family: nobel-light;
+    font-weight: 700;
+    font-size: 1.5vw;
     letter-spacing: .2vw;
     padding-bottom: 1vw;
 }
@@ -213,11 +221,7 @@ li {
     font-size: 1vw;
 }
 
-#hero-second-slide {
-    display: none;
-}
-
-#hero-btn1, #hero-btn2 {
+#hero-btn1, #hero-btn2, #hero-btn3 {
     width: 15%;
     height: 10%;
     color: black;
@@ -239,10 +243,136 @@ li {
     left: 60%;
 }
 
-#hero-btn1:hover, #hero-btn2:hover {
+#hero-btn3 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hero-btn1:hover, #hero-btn2:hover, #hero-btn3:hover {
     color: white;
     background-color: transparent;
     border: 1px solid white;
+}
+
+#hero-first-slide {
+    display: none;
+}
+
+#hero-second-slide {
+    display: relative;
+}
+
+#hero-second-slide h1 {
+    font-family: nobel-book;
+}
+
+/* ------------------------------------------ */
+#shopping-section {
+    padding-top: 2vw;
+    position: relative;
+    text-align: center;
+}
+
+#shopping-section h1 {
+    font-family: nobel-book;
+    font-size: 2vw;
+}
+
+#shopping-wrapper {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tool {
+    padding-top: 2vw;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nobel-bold;
+    padding-right: 3vw;
+}
+
+.tool img {
+    opacity: 0.7;
+}
+
+.tool:hover img {
+    opacity: 1;
+}
+
+.tool:hover span {
+    text-decoration: underline;
+}
+
+.tool span {
+    padding-top: 2vw;
+    display: block;
+}
+
+/* ------------------------------- */
+#current-section {
+    padding-top: 2vw;
+    text-align: center;
+    font-family: nobel-book;
+}
+
+#current-section h1 {
+    font-size: 2vw;
+}
+
+#current-wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1vw 3vw;
+}
+
+.current-item {
+    padding: 0 1vw;
+}
+
+.img-container {
+    overflow: hidden;
+}
+
+.current-item img {
+    transition: .4s;
+    width: 100%;
+    height: 25vh;
+}
+
+.current-item img:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+}
+
+.current-item h2 {
+    margin-top: 2vh;
+    font-size: 1.5vw;
+    letter-spacing: .1vw;
+}
+
+.current-item span {
+    margin-top: 2vh;
+    font-size: 1vw;
+    letter-spacing: .1vw;
+    width: 40%;
+}
+
+.current-label-container {
+    height: 10vh;
+}
+
+.white-black-btn {
+    background-color: white;
+    font-family: nobel-bold;
+    padding: 1vw 3vw;
+    border: 3px solid black;
+}
+
+.white-black-btn:hover {
+    background-color: black;
+    color: white;
 }
 
 
@@ -258,5 +388,6 @@ li {
         display: none;
     }
 }
+
 
 
