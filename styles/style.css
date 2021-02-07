@@ -23,6 +23,11 @@
     src: url("fonts/nobel-regular.ttf") format("truetype");
 }
 
+hr {
+    width: 80%;
+    margin: auto !important;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -32,6 +37,59 @@ ul {
 li {
     margin: 0;
     padding: 0;
+}
+
+.section {
+    padding: 2vw 0;
+}
+
+.zoom-item {
+    position: relative;
+}
+
+.zoom-item img {
+    transition: .4s;
+    width: 100%;
+    height: 100%;
+}
+
+.zoom-item h2 {
+    padding: 0 1vw;
+    width: 100%;
+    font-family: nobel-bold;
+    font-size: 1.2vw;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    bottom: 4vw;
+}
+
+.zoom-item .white-transp-btn-zoom {
+    width: 40%;
+    height: 3vw;
+    font-family: nobel-bold;
+    font-size: .8vw;
+
+    border: none;
+    background-color: white;
+
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.zoom-item:hover .white-transp-btn-zoom {
+    color: white;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+.zoom-item img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
 }
 
 .pointer {
@@ -319,9 +377,7 @@ li {
 }
 
 /* ------------------------------- */
-.section {
-    padding: 2vw 0;
-}
+
 #current-section {
     padding: 2vw 0;
     text-align: center;
@@ -392,6 +448,7 @@ li {
 
 #explore-section {
     position: relative;
+    margin-bottom: 10vh;
 }
 
 #explore-top-wrapper {
@@ -477,6 +534,14 @@ li {
 
 .color-btn:focus img, .color-btn:hover img {
     border: 2px solid goldenrod;
+}
+
+#color-name-label {
+    font-family: nobel-book;
+    font-style: italic;
+    position: absolute;
+    left: 13%;
+    bottom: -6%;
 }
 
 #explore-stage-wrapper {

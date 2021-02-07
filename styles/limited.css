@@ -1,0 +1,39 @@
+#limited-section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#limited-section h1 {
+    font-family: nobel-book;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    padding-bottom: 2vw;
+}
+
+#limited-grid-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    'a d c';
+    gap: .25vw;
+}
+
+#limited-grid-item1 {
+    grid-area: a;
+}
+
+#limited-grid-item2 {
+    grid-area: b;
+}
+
+#limited-grid-item3 {
+    grid-area: c;
+}
+
+#limited-grid-item4 {
+    grid-area: d;
+}
+

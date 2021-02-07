@@ -1,0 +1,22 @@
+#discover-section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#discover-section h1 {
+    font-family: nobel-book;
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    padding-bottom: 2vw;
+}
+
+#discover-grid-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'a b c';
+    gap: .25vw;
+}
