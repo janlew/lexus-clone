@@ -218,6 +218,7 @@ li {
     font-size: 4vw;
     top: 45%;
     right: 0;
+    opacity: 0.1;
 }
 
 #hero-prev {
@@ -225,6 +226,7 @@ li {
     position: absolute;
     font-size: 4vw;
     top: 45%;
+    opacity: 0.1;
 }
 
 .hero-label-top {
@@ -473,7 +475,7 @@ li {
     background-color: transparent;
 }
 
-.active {
+.explore-active {
     position: relative;
     font-family: nobel-bold;
     border: none;
