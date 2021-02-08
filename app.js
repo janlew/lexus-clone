@@ -1,6 +1,28 @@
 $(document).ready(function () {
     $('.carousel').carousel('pause');
 
+    // EXPLORE YOUR LEXUS COLOR CHANGE
+
+    $('.color-btn').each(function() {
+        $(this).click(() => {
+            console.log(this.id);
+            let text = this.id;
+            $('#color-name-label').html(text);
+
+            let url = 'https://www.lexus.com/' + this.value;
+            $('#explore-car-img').attr('src', url);
+
+            $('.color-btn').each(function () {
+                $(this).removeClass('activated');
+            });
+            $(this).addClass('activated');
+        });
+    });
+
+
+
+    // EXPERIENCE AMAZING CAROUSEL
+
     $('.amazing-slide').css({
         "transform": "translateX(-100%)"
     });
@@ -31,7 +53,7 @@ $(document).ready(function () {
     });
 
     $('.amazing-slide').on("transitionend", () => {
-        if ($slides[counter].id === "lastClone" ) {
+        if ($slides[counter].id === "lastClone") {
             counter = size - 2;
             $('.amazing-slide').css({
                 "transform": "translateX(" + (-100 * counter) + "%)",
@@ -39,7 +61,7 @@ $(document).ready(function () {
             });
         }
 
-        if ($slides[counter].id === "firstClone" ) {
+        if ($slides[counter].id === "firstClone") {
             counter = size - counter;
             $('.amazing-slide').css({
                 "transform": "translateX(" + (-100 * counter) + "%)",
@@ -48,9 +70,10 @@ $(document).ready(function () {
         }
     });
 
-    
 
-    
+
+
+
 
 
 
