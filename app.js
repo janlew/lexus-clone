@@ -31,8 +31,23 @@ $(document).ready(function () {
                 "display": "none"
             });
         }, 2000);
-        
-        
+    });
+
+    // MOBILE MENU
+    $('#mobile-nav-right').click((e) => {
+        $('#mobile-menu').slideToggle();
+        $('#mobile-search').show();
+        $('#mobile-search-input').hide();
+    });
+
+    $('#mobile-search').click(function (e) { 
+        $('#mobile-search').toggle();
+        $('#mobile-search-input').css({
+            "display": "block",
+            "transform": "translateX(0%)",
+            "transition": "2s",
+            "z-index": "1"
+        });
     });
 
     //TEXT ANIMATION 
@@ -97,11 +112,6 @@ $(document).ready(function () {
             "bottom": "14%",
             "transition": "none"
         });
-    });
-
-    // MOBILE MENU
-    $('#mobile-nav-right').click((e) => {
-        $('#mobile-menu').slideToggle();
     });
 
     // EXPLORE YOUR LEXUS COLOR CHANGE

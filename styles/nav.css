@@ -180,6 +180,10 @@
         margin-bottom: -1.54vh;
     }
 
+    #mobile-menu ul {
+        padding-left: 0;
+    }
+
     #mobile-search {
         opacity: .6;
     }
@@ -202,6 +206,18 @@
         color: white;
         padding-bottom: 2vh;
         
+    }
+
+    #mobile-search-input {
+        display: none;
+        background-color: black;
+        border: none;
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        transform: translateX(100%);
+        line-height: 5vh;
+        color: white;
     }
 }
 
