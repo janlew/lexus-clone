@@ -99,16 +99,31 @@
 }
 
 #footer-bot p {
+    text-align: center;
     color: #939393;
-    font-size: .9vw;
+    font-size: 90%;
     font-family: nobel-book;
 }
 
 #footer-bot a, #footer-bot a p {
-    font-size: .8vw;
+    font-size: 85%;
     color: white !important;
 }
 
 #footer-bot a:hover, #footer-bot a p:hover {
     color: #878787 !important;
+}
+
+
+@media screen and (max-width: 1032px) {
+    #footer-grid {
+        grid-template-areas: 
+        'a b f'
+        'a e c'
+        'a d .';
+    }
+
+    #ft-grid1 {
+        margin-left: 0%;
+    }
 }
