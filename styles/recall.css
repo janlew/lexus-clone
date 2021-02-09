@@ -1,0 +1,23 @@
+#recall-section {
+    position: relative;
+}
+
+#recall-wrapper {
+   text-align: center;
+   cursor: pointer;
+   font-size: .9vw;
+   letter-spacing: .1vw;
+}
+
+#recall-wrapper:hover {
+   opacity: .6;
+}
+
+#recall-wrapper p {
+   font-family: nobel-book;
+}
+
+#recall-wrapper b {
+   font-family: nobel-bold;
+   text-decoration: underline;
+}

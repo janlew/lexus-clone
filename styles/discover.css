@@ -18,3 +18,36 @@
     grid-template-columns: auto auto auto;
     gap: .25vw;
 }
+
+@media screen and (max-width: 1032px) {
+    #discover-section h1 {
+        margin-bottom: -3vh;
+    }
+
+    #discover-grid-wrapper {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        margin: 1vw 3vw;
+    }
+
+    #discover-grid-wrapper .img-container {
+        box-sizing: border-box;
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+    }
+
+    #discover-grid-wrapper h2 {
+        font-size: 2vh;
+        bottom: 8%;
+    }
+
+    #discover-grid-wrapper .white-transp-btn-zoom {
+        font-size: 1.3vh;
+        border: 2px solid black;
+        bottom: 2%;
+        width: 40%;
+        height: 5%;
+    }
+
+}

@@ -1,0 +1,154 @@
+#explore-section {
+    position: relative;
+    margin-bottom: 10vh;
+}
+
+#explore-top-wrapper {
+    text-align: center;
+    font-family: nobel-book;
+}
+
+#explore-top-wrapper h1 {
+    font-size: 2vw;
+    letter-spacing: .2vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#explore-top-wrapper ul li {
+    display: inline-block;
+}
+
+#explore-top-wrapper button {
+    border: none;
+    padding: 0 1vw;
+    background-color: transparent;
+}
+
+.explore-active {
+    position: relative;
+    font-family: nobel-bold;
+    border: none;
+}
+
+#exp-act::after {
+    content: "";
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+#explore-model-wrapper button {
+    display: inline-block;
+    height: 10vh;
+    padding: 0 1vw;
+}
+
+#explore-model-wrapper img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+#stage {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
+
+#colors-wrapper {
+    margin-top: 2vh;
+    margin-left: 5vw;
+}
+
+.color-btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+}
+
+.color-btn img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.color-btn:focus img, .color-btn:hover img {
+    border: 2px solid goldenrod;
+}
+
+#color-name-label {
+    font-family: nobel-book;
+    font-style: italic;
+    position: absolute;
+    left: 13%;
+    bottom: -6%;
+}
+
+#explore-stage-wrapper {
+    position: relative;
+}
+
+#explore-card {
+    width: 100%;
+    height: 100%;
+    color: white;
+    position: absolute;
+    top: 8vh;
+    left: 5vw;
+}
+
+#explore-starting, #explore-price {
+    font-family: pakt;
+}
+
+#explore-year {
+    font-family: nobel-regular;
+    font-size: 2vh;
+    margin-bottom: 0;
+}
+
+#explore-is {
+    font-family: nobel-book;
+    font-size: 7vh;
+}
+
+#explore-is span {
+    padding-bottom: 1vh;
+    border-bottom: 5px solid white;
+}
+
+#explore-starting {
+    font-size: 2vh;
+    margin-bottom: 0;
+}
+
+#explore-price {
+    font-size: 4vh;
+}
+
+#explore-btn-bld {
+    left: 16%
+}
+
+#explore-car-display {
+    position: relative;
+}
+
+ #explore-car-display img {
+     position: absolute;
+     left: 30%;
+     width: 70vw;
+     transform: translateY(-45%);
+ }

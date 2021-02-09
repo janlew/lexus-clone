@@ -1,6 +1,11 @@
 $(document).ready(function () {
     $('.carousel').carousel('pause');
 
+    // MOBILE MENU
+    $('#mobile-nav-right').click((e) => { 
+        $('#mobile-menu').slideToggle();
+    });
+
     // EXPLORE YOUR LEXUS COLOR CHANGE
 
     $('.color-btn').each(function() {

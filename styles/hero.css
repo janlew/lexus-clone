@@ -1,0 +1,110 @@
+#hero-section {
+    font-family: nobel-book;
+    position: relative;
+}
+
+#hero-next {
+    cursor: pointer;
+    position: absolute;
+    font-size: 4vw;
+    top: 45%;
+    right: 0;
+    opacity: 0.1;
+}
+
+#hero-prev {
+    cursor: pointer;
+    position: absolute;
+    font-size: 4vw;
+    top: 45%;
+    opacity: 0.1;
+}
+
+.hero-label-top {
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.hero-label-top h1 {
+    font-size: 3.4vw;
+    letter-spacing: .5vw;
+    padding-bottom: 1vw;
+}
+
+.hero-label-top h1 span {
+    padding-bottom: .6vw;
+    border-bottom: .3vw solid #fff;
+}
+
+.hero-label-top h3 {
+    font-family: nobel-light;
+    font-weight: 700;
+    font-size: 1.5vw;
+    letter-spacing: .2vw;
+    padding-bottom: 1vw;
+}
+
+#hero-label-bot {
+    color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#hero-label-bot h4 {
+    margin-bottom: 0;
+    letter-spacing: .2vw;
+    font-family: pakt;
+    font-size: 1.6vw;
+}
+
+#big-label {
+    line-height: 120%;
+    letter-spacing: .2vw;
+    font-family: pakt;
+    font-size: 5.3vw;
+}
+
+#small-label {
+    margin-top: -1vw;
+    line-height: 1vw;
+    letter-spacing: .2vw;
+    font-size: 1vw;
+}
+
+#hero-btn1, #hero-btn2, #hero-btn3 {
+    font-size: 1.2vw;
+    bottom: 2%;
+    transform: translateX(-50%);
+}
+
+#hero-btn1 {
+    left: 40%;
+}
+
+#hero-btn2 {
+    left: 60%;
+}
+
+#hero-btn3 {
+    left: 50%;
+}
+
+#hero-first-slide {
+    display: none;
+}
+
+#hero-second-slide {
+    display: relative;
+}
+
+#hero-second-slide h1 {
+    font-family: nobel-book;
+}

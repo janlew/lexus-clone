@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="styles/limited.css">
     <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/amazing.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/shopping.css">
+    <link rel="stylesheet" href="styles/current.css">
+    <link rel="stylesheet" href="styles/explore.css">
+    <link rel="stylesheet" href="styles/recall.css">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
         integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
@@ -35,6 +41,8 @@
                 <img class="pointer" id="logo" src="https://www.lexus.com/assets/img/global/lexus_logo_english.png"
                     alt="Lexus logo">
             </div>
+
+
             <div id="main-menu-wrapper">
                 <ul>
                     <div id="sedans-dropdown" class="dropdown-main">
@@ -378,10 +386,50 @@
                 <button id="search-btn"><i class="bi bi-search"></i></button>
             </div>
 
+            <div id="mobile-nav-right">
+                <h2>MENU</h2>
+                <i class="bi bi-list"></i>
+            </div>
+
         </div>
     </div>
 
     <div id="main-wrapper">
+        <div id="mobile-menu">
+            <ul id="mobile-menu-ul">
+                <li>
+                    <button id="mobile-search"><i class="bi bi-search"></i>SEARCH</button>
+                </li>
+                <li>
+                    <button>SEDANS</button>
+                </li>
+                <li>
+                    <button>SUVS</button>
+                </li>
+                <li>
+                    <button>COUPES</button>
+                </li>
+                <li>
+                    <button>HYBRIDS</button>
+                </li>
+                <li>
+                    <button>PERFORMANCE</button>
+                </li>
+                <li>
+                    <button>FUTURE</button>
+                </li>
+                <li>
+                    <button>Owners</button>
+                </li>
+                <li>
+                    <button>L/Certified</button>
+                </li>
+                <li>
+                    <button>Find a Dealer</button>
+                </li>
+            </ul>
+        </div>
+
         <div id="hero-section">
 
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval=false>
@@ -546,7 +594,8 @@
                             <button class="white-transp-btn" id="explore-btn-bld">BUILD</button>
                         </div>
                         <div id="explore-car-display">
-                            <img id="explore-car-img" src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-EminentWhitePearl-LEX-ISG-MY21-0038.png?rev=afd3b66272dd405d8827eced081f5e71?la=en&hash=CFE12F57AE057486C0E830C45A6A17C1"
+                            <img id="explore-car-img"
+                                src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-EminentWhitePearl-LEX-ISG-MY21-0038.png?rev=afd3b66272dd405d8827eced081f5e71?la=en&hash=CFE12F57AE057486C0E830C45A6A17C1"
                                 alt="">
                         </div>
                     </div>
@@ -554,25 +603,33 @@
 
                 <div id="stage-bottom">
                     <div id="colors-wrapper">
-                        <button class="color-btn activated" id="Eminent White Pearl*" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-EminentWhitePearl-LEX-ISG-MY21-0038.png?rev=afd3b66272dd405d8827eced081f5e71?la=en&hash=CFE12F57AE057486C0E830C45A6A17C1" autofocus><img
+                        <button class="color-btn activated" id="Eminent White Pearl*"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-EminentWhitePearl-LEX-ISG-MY21-0038.png?rev=afd3b66272dd405d8827eced081f5e71?la=en&hash=CFE12F57AE057486C0E830C45A6A17C1"
+                            autofocus><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-eminent-white-pearl.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Iridium*" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-Iridium-LEX-ISG-MY21-003802.png?rev=a37cf20ccbd0415eb9932b18fdc276d8?la=en&hash=AE5C7FE334E52FC87638AFBEF693073B"><img
+                        <button class="color-btn" id="Iridium*"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-Iridium-LEX-ISG-MY21-003802.png?rev=a37cf20ccbd0415eb9932b18fdc276d8?la=en&hash=AE5C7FE334E52FC87638AFBEF693073B"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-iridium.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Atomic Silver" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-AtomicSilver-LEX-ISG-MY21-003803.png?rev=bbc8214e8f7045a69fdf8ec35fd6ff48?la=en&hash=F1624AC7AC1F8AFD9FFC4887B832DD9A"><img
+                        <button class="color-btn" id="Atomic Silver"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-AtomicSilver-LEX-ISG-MY21-003803.png?rev=bbc8214e8f7045a69fdf8ec35fd6ff48?la=en&hash=F1624AC7AC1F8AFD9FFC4887B832DD9A"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-atomic_silver.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Cloudburst Gray*" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-CloudburstGray-LEX-ISG-MY21-003801.png?rev=fa4f07bf71634280b96b32e461c463c8?la=en&hash=6BB83FB2141CA22E8B90E09427D91BCB"><img
+                        <button class="color-btn" id="Cloudburst Gray*"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-CloudburstGray-LEX-ISG-MY21-003801.png?rev=fa4f07bf71634280b96b32e461c463c8?la=en&hash=6BB83FB2141CA22E8B90E09427D91BCB"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-cloudburst_gray.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Caviar" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-Caviar-LEX-ISG-MY21-003804.png?rev=6811ee57b75841cd82c5bd4cddcec495?la=en&hash=ADE2FF82F7BC37566A03B359F753101D"><img
+                        <button class="color-btn" id="Caviar"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-Caviar-LEX-ISG-MY21-003804.png?rev=6811ee57b75841cd82c5bd4cddcec495?la=en&hash=ADE2FF82F7BC37566A03B359F753101D"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-caviar.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Matador Red Mica" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-MatadorRedMica-LEX-ISG-MY21-003805.png?rev=9da45b525adc48d8b1f295ac45de686e?la=en&hash=F270AEC3FFE408A34AF054FD4DE2AB96"><img
+                        <button class="color-btn" id="Matador Red Mica"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-MatadorRedMica-LEX-ISG-MY21-003805.png?rev=9da45b525adc48d8b1f295ac45de686e?la=en&hash=F270AEC3FFE408A34AF054FD4DE2AB96"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-matador_red_mica.png"
                                 alt=""></button>
-                        <button class="color-btn" id="Grecian Water" value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-GrecianWater-LEX-ISG-MY21-003806.png?rev=c048be5c34ea4ea7a8da47040ec2d96c?la=en&hash=054C9AC52E8F6C6C99E13C80E002C530"><img
+                        <button class="color-btn" id="Grecian Water"
+                            value="/-/media/TMNA.LEXC/Project/Lexus/Homepage/Vehicle-Selector/vehicle/IS/2021/Homepage-IS-GrecianWater-LEX-ISG-MY21-003806.png?rev=c048be5c34ea4ea7a8da47040ec2d96c?la=en&hash=054C9AC52E8F6C6C99E13C80E002C530"><img
                                 src="https://www.lexus.com/cm-img/mpr/_global/visualizer-swatches/exterior/is/IS-exterior-swatch-42x42-grecian_water.png"
                                 alt=""></button>
                     </div>
@@ -591,13 +648,18 @@
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2021/01/MY21-RX-Homepage-Tile-750x750_LEX-RXG-MY21-0001_M75.jpg?rev=e9092d19b2e04ff6b81d6fe7c49a26db"
                             alt="ExpLLS">
                     </div>
-                    <h2>THE 2021 RX F SPORT BLACK LINE SPECIAL EDITION</h2>
-                    <button class="white-transp-btn-zoom">LEARN MORE</button>
+                    <div class="label-container">
+                        <h2>THE 2021 RX F SPORT BLACK LINE SPECIAL EDITION</h2>
+                        <button class="white-transp-btn-zoom">LEARN MORE</button>
+                    </div>
                 </div>
                 <div id="limited-grid-item2" class="zoom-item">
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2021/01/MY21-RC-Homepage-Tile-750x372_LEX-RCG-MY21-0002_M75.jpg?rev=f66c9246c94146ee91fcc3aca27f09d6"
                             alt="ExpLLS">
+
+                    </div>
+                    <div class="label-container">
                         <h2>THE 2021 RC F SPORT BLACK LINE SPECIAL EDITION</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -606,6 +668,8 @@
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/MY2021/NX/Lexus-Special-Edition-homepage-tile_LEX-NXH-MY21-0023_750x750_M75.jpg?rev=7448a1250bf348cba2109fad4ad6f9f4"
                             alt="ExpLLS">
+                    </div>
+                    <div class="label-container">
                         <h2>THE 2021 NX HYBRID F SPORT BLACK LINE SPECIAL EDITION</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -614,6 +678,8 @@
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2020/08/Lexus-ES-Special-Edition-homepage-tile_LEX-ESG-MY21-0034_750x372_M75.jpg?rev=2e2de67293b043f2931c0d283a43a382"
                             alt="ExpLLS">
+                    </div>
+                    <div class="label-container">
                         <h2>THE 2021 ES F SPORT BLACK LINE SPECIAL EDITION</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -627,17 +693,22 @@
             <h1>DISCOVER LEXUS</h1>
             <div id="discover-grid-wrapper">
                 <div class="zoom-item">
-                    <div class="img-container">
+                    <div class="img-container" id="first-dsc-cnt">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2019/10/Lexus-Brand-homepage-750x750-LEX-MIS-CY19-0069_M75.jpg?rev=ca0aaf0163764db68106f0fc46a51919"
                             alt="ExpLLS">
                     </div>
-                    <h2>WHAT AMAZING IDEAS WILL YOU INSPIRE NEXT?</h2>
-                    <button class="white-transp-btn-zoom">DISCOVER MORE</button>
+                    <div class="label-container">
+                        <h2>WHAT AMAZING IDEAS WILL YOU INSPIRE NEXT?</h2>
+                        <button class="white-transp-btn-zoom">DISCOVER MORE</button>
+                    </div>
                 </div>
                 <div class="zoom-item">
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2020/12/Lexus-MY21-performance-homepage-tile-LEX-RCF-MY20-0007-01_750x750_M85.jpg?rev=dbe0a4eb85604822a4a770fe2f046834"
                             alt="ExpLLS">
+
+                    </div>
+                    <div class="label-container">
                         <h2>LEXUS PERFORMANCE: CRAFTED TO THE EXTREME</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -646,6 +717,9 @@
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2020/12/WSE/Lexus-lcertWSE21-homepage-750x750_M95.jpg?rev=457f94cc4cbf469882c2b9275a778b69"
                             alt="ExpLLS">
+
+                    </div>
+                    <div class="label-container">
                         <h2>SPECIAL OFFERS ON L/CERTIFIED</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -664,13 +738,17 @@
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2019/09/Lexus-Homepage-Lexus-App-750x750-LEX-MIS-CY19-0059_M75.jpg?rev=96e6b945ee294f33a43628793ecb791f"
                             alt="ExpLLS">
                     </div>
-                    <h2>THE LEXUS APP: CONNECTIVITY, AT YOUR FINGERTIPS.</h2>
-                    <button class="white-transp-btn-zoom">LEARN MORE</button>
+                    <div class="label-container">
+                        <h2>THE LEXUS APP: CONNECTIVITY, AT YOUR FINGERTIPS.</h2>
+                        <button class="white-transp-btn-zoom">LEARN MORE</button>
+                    </div>
                 </div>
                 <div id="limited-grid-item2" class="zoom-item">
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2020/Lexus-ownership_service-homepage-tile-LEX-CSP-CY20-0060_750x372_M95.jpg?rev=edf36a92a65d45b28f0d8d5af3c2cf0e"
                             alt="ExpLLS">
+                    </div>
+                    <div class="label-container">
                         <h2>A SERVICE EXPERIENCE CRAFTED AROUND YOU</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -679,6 +757,9 @@
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/Lexus-accessories-homepage-tile_LEX-ACC-MY16-0023_750x750.jpg?rev=4e7e5e3948d44c42acb7f9ec0461a0ed"
                             alt="ExpLLS">
+
+                    </div>
+                    <div class="label-container">
                         <h2>GIVE YOUR LEXUS THE FINISHING TOUCH</h2>
                         <button class="white-transp-btn-zoom">SHOP ACCESSORIES</button>
                     </div>
@@ -687,6 +768,9 @@
                     <div class="img-container">
                         <img src="https://www.lexus.com//-/media/TMNA.LEXC/Project/Lexus/Homepage/Content-Grid/2020/Lexus-ownership_benefits-homepage-tile-LEX-CSP-CY20-0061_750x372_M95.jpg?rev=2363346cf66d4f09b4525e0b73b9f234"
                             alt="ExpLLS">
+
+                    </div>
+                    <div class="label-container">
                         <h2>OWNER RESOURCES AND BENEFITS</h2>
                         <button class="white-transp-btn-zoom">LEARN MORE</button>
                     </div>
@@ -759,7 +843,7 @@
                                 <button class="white-black-btn amazing-btn">LEARN MORE</button>
                             </div>
                         </div>
-    
+
                         <div id="amazing-slide2" class="amazing-slide">
                             <div class="amazing-slide-item zoom-item">
                                 <div class="img-container">
