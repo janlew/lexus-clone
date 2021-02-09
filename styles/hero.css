@@ -99,14 +99,6 @@
     left: 50%;
 }
 
-#hero-first-slide {
-    display: none;
-}
-
-#hero-second-slide {
-    display: relative;
-}
-
-#hero-second-slide h1 {
-    font-family: nobel-book;
+#hero-carousel-item2 {
+    margin-bottom: -6.6px;
 }

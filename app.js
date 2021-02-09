@@ -114,6 +114,19 @@ $(document).ready(function () {
         });
     });
 
+    // SHOPPING TOOLS NAMES CHANGE
+
+    $(window).resize(function () { 
+        if (window.matchMedia("(max-width: 1032px)").matches) {
+            console.log('hahahahah')
+            $('#tool1 span').html('BUILD');
+            $('#tool2 span').html('DEALERS');
+        } else {
+            $('#tool1 span').html('BUILD YOUR LEXUS');
+            $('#tool2 span').html('FIND A DEALER');
+        }
+    });
+
     // EXPLORE YOUR LEXUS COLOR CHANGE
 
     $('.color-btn').each(function () {

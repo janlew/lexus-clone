@@ -43,15 +43,25 @@
 @media screen and (max-width: 1032px) {
 
     .tool {
+        position: relative;
         padding-right: 0;
     }
 
+    .tool span {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        font-size: 70%;
+    }
+
     #shopping-wrapper {
+        padding: 0 15% 5% 15%;
         font-size: 80%;
-        width: 80%;
         margin: 0 auto;
         display: grid;
         gap: .1vw;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
  }
