@@ -1,6 +1,40 @@
 $(document).ready(function () {
     $('.carousel').carousel('pause');
 
+    //MENU SEARCH
+    $('#search-btn').click(function () { 
+        $('#main-menu-wrapper, #right-menu-wrapper, #logo-wrapper').css({
+            "z-index": "0"
+        });
+        $('#searchbar-wrapper').css({
+            "display": "block",
+            "transform": "translateX(100%)",
+            "transition": "none",
+            "z-index": "1"
+        });
+        setTimeout(() => {
+            $('#searchbar-wrapper').css({
+                "transform": "translateX(0%)",
+                "transition": "2s",
+                "z-index": "1"
+            });
+        }, 100);
+    });
+
+    $('.bi-x').click(function () { 
+        $('#searchbar-wrapper').css({
+            "transform": "translateX(100%)",
+            "transition": "2s"
+        });
+        setTimeout(() => {
+            $('#searchbar-wrapper').css({
+                "display": "none"
+            });
+        }, 2000);
+        
+        
+    });
+
     //TEXT ANIMATION 
     $('#hero-carousel-item1').mouseenter(function () {
         console.log('enter');
