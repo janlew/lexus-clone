@@ -54,11 +54,11 @@
 
 .amazing-btn {
     position: absolute;
-    bottom: 2%;
+    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 
-    font-size: .8vw;
+    font-size: 1.5vw;
 }
 
 #slider-container {

@@ -82,8 +82,9 @@
     }
 
     #current-wrapper button {
-        font-size: 60%;
-        height: 8%;
+        font-size: 1.8vh;
+        min-height: 8%;
+        height: auto;
         width: 25%;
     }
 }

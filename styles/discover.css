@@ -34,19 +34,19 @@
     #discover-grid-wrapper .img-container {
         box-sizing: border-box;
         margin-top: 3vh;
-        margin-bottom: 1vh;
+        margin-bottom: 0vh;
     }
 
     #discover-grid-wrapper h2 {
-        font-size: 2vh;
+        font-size: 3vw;
         bottom: 8%;
     }
 
     #discover-grid-wrapper .white-transp-btn-zoom {
-        font-size: 1.3vh;
+        font-size: 1.5vw;
         border: 2px solid black;
         bottom: 2%;
-        width: 40%;
+        width: 30%;
         height: 5%;
     }
 }

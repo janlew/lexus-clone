@@ -59,11 +59,11 @@
     }
 
     .label-container {
-        height: 12vh;
+        height: 20vw;
     }
 
     .label-container h2 {
-        font-size: 60%;
+        font-size: 2vw;
         bottom: 20%;
         color: black;
     }
@@ -75,7 +75,7 @@
     }
 
     .label-container .white-transp-btn-zoom {
-        font-size: 40%;
+        font-size: 1.5vw;
         border: 2px solid black;
         bottom: 4%;
         width: 40%;

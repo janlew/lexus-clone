@@ -127,6 +127,10 @@
         'a d .';
     }
 
+    .ft-grid ul {
+        display: block;
+    }
+
     #ft-grid1 {
         margin-left: 0%;
     }

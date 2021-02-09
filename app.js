@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.carousel').carousel('pause');
 
     //MENU SEARCH
-    $('#search-btn').click(function () { 
+    $('#search-btn').click(function () {
         $('#main-menu-wrapper, #right-menu-wrapper, #logo-wrapper').css({
             "z-index": "0"
         });
@@ -23,7 +23,7 @@ $(document).ready(function () {
         }, 100);
     });
 
-    $('.bi-x').click(function () { 
+    $('.bi-x').click(function () {
         $('#searchbar-wrapper').css({
             "transform": "translateX(100%)",
             "transition": "2s"
@@ -42,7 +42,7 @@ $(document).ready(function () {
         $('#mobile-search-input').hide();
     });
 
-    $('#mobile-search').click(function (e) { 
+    $('#mobile-search').click(function (e) {
         $('#mobile-search').toggle();
         $('#mobile-search-input').css({
             "display": "block",
@@ -53,13 +53,37 @@ $(document).ready(function () {
     });
 
     // MOBILE FOOTER
-    $('.ft-grid').click(function (e) { 
-        e.preventDefault();
-        $(this).children().eq(1).slideToggle();
-        $(this).children().eq(1).css({
-            "border-bottom": "1px solid rgba(147, 147, 147, 0.6)"
-        });
-        $(this).children().eq(0).children().eq(0).toggleClass('bi-caret-down-fill bi-caret-up-fill');
+    $('.ft-grid').click(function () {
+        if (window.matchMedia("(max-width: 640px)").matches) {
+            $(this).children().eq(1).slideToggle();
+            $(this).children().eq(1).css({
+                "border-bottom": "1px solid rgba(147, 147, 147, 0.6)"
+            });
+            $(this).children().eq(0).children().eq(0).toggleClass('bi-caret-down-fill bi-caret-up-fill');
+        }
+    });
+
+
+    $(window).resize(() => {
+        if ($(window).width() > 640) {
+            $('.ft-grid ul').each(function() {
+                $(this).css({
+                    "border": "none",
+                    "display": "block"
+                });
+            });
+            $('.ft-grid h3 i').each(function() {
+                $(this).removeClass('bi bi-caret-down-fill bi-caret-up-fill');
+            });
+        } else {
+            $('.ft-grid ul').each(function() {
+                $(this).hide();
+            });
+            $('.ft-grid h3 i').each(function() {
+                $(this).removeClass('bi bi-caret-up-fill');
+                $(this).addClass('bi bi-caret-down-fill');
+            });
+        }
     });
 
     //TEXT ANIMATION 
@@ -128,7 +152,7 @@ $(document).ready(function () {
 
     // SHOPPING TOOLS NAMES CHANGE
 
-    $(window).resize(function () { 
+    $(window).resize(function () {
         if (window.matchMedia("(max-width: 1032px)").matches) {
             $('#tool1 span').html('BUILD');
             $('#tool2 span').html('DEALERS');
