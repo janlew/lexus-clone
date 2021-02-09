@@ -39,3 +39,19 @@
     padding-top: 2vw;
     display: block;
 }
+
+@media screen and (max-width: 1032px) {
+
+    .tool {
+        padding-right: 0;
+    }
+
+    #shopping-wrapper {
+        font-size: 80%;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        gap: .1vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+ }
