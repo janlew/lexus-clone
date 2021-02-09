@@ -24,7 +24,7 @@
     width: 100%;
     color: white;
     position: absolute;
-    top: 2%;
+    top: -30%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -50,9 +50,10 @@
 }
 
 #hero-label-bot {
+    z-index: -1;
     color: white;
     position: absolute;
-    bottom: 14%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -80,8 +81,9 @@
 }
 
 #hero-btn1, #hero-btn2, #hero-btn3 {
+    z-index: -1;
     font-size: 1.2vw;
-    bottom: 2%;
+    bottom: 14%;
     transform: translateX(-50%);
 }
 
