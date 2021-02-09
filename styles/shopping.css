@@ -41,7 +41,6 @@
 }
 
 @media screen and (max-width: 1032px) {
-
     .tool {
         position: relative;
         padding-right: 0;
@@ -63,5 +62,4 @@
         gap: .1vw;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
  }

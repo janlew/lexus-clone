@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    // PAUSING HERO CAROUSEL
     $('.carousel').carousel('pause');
 
     //MENU SEARCH
@@ -48,6 +50,16 @@ $(document).ready(function () {
             "transition": "2s",
             "z-index": "1"
         });
+    });
+
+    // MOBILE FOOTER
+    $('.ft-grid').click(function (e) { 
+        e.preventDefault();
+        $(this).children().eq(1).slideToggle();
+        $(this).children().eq(1).css({
+            "border-bottom": "1px solid rgba(147, 147, 147, 0.6)"
+        });
+        $(this).children().eq(0).children().eq(0).toggleClass('bi-caret-down-fill bi-caret-up-fill');
     });
 
     //TEXT ANIMATION 
@@ -118,7 +130,6 @@ $(document).ready(function () {
 
     $(window).resize(function () { 
         if (window.matchMedia("(max-width: 1032px)").matches) {
-            console.log('hahahahah')
             $('#tool1 span').html('BUILD');
             $('#tool2 span').html('DEALERS');
         } else {
